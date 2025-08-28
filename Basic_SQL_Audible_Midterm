@@ -1,0 +1,19 @@
+select audiobook_name
+from Audiobooks
+where stars >= 4 and ratings > 100;
+
+select distinct author
+from Audiobooks
+where stars >= 4 and ratings > 100;
+
+select distinct narrator
+from Audiobooks
+where stars >= 4 and ratings > 100;
+
+select audiobook_name, narrator
+from Audiobooks
+where author = "Roald Dahl";
+
+select audiobook_name, author, narrator 
+from Audiobooks 
+where audiobook_name like '%Dragon%';
